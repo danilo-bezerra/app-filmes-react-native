@@ -1,3 +1,5 @@
+//
+
 export function getListMovies(size, movies) {
   const moviesList = [];
 
@@ -6,4 +8,8 @@ export function getListMovies(size, movies) {
   }
 
   return moviesList;
+}
+
+export function randomBanner(movie) {
+  return Math.floor(Math.random() * movie.length);
 }
